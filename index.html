@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<head>        
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1"> 
+
+  <title> Facial Recognition </title>
+  <link rel = "stylesheet" type = "text/css" href = "styles/style.css"> 
+
+  <!--for the nav bar-->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+  <!-- added to use font awesome icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <meta name="description" content="">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="js/nav.js" async defer></script>
+  <script src="js/search.js" async defer></script>
+
+  <script src="/socket.io/socket.io.js"></script>
+
+</head>
+
+<body> 
+
+<!-- nav-bar div-->
+<input type="checkbox" id="active">
+<label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+<div class="wrapper">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="SignIn.html">Sign in</a></li>
+    <li><a href="SignUp.html">Sign up</a></li>
+  </ul>
+</div>
+
+<!--home page welcoming text div-->
+<div class="welcome-animation">
+  <h1 class = "welcome">Welcome to <div class="roller">
+    <span id="rolltext">Academic<br/> Facial<br/> Recognition<br/> Website <br/> </span>
+</h1>
+
+</div>
+
+
+
+<!--home page text div-->
+  <div class = "second-text"> 
+    <h1> Academic Facial Recognition website </h1>
+    <p class = "second-para"> welcome into the future of taking attendance at schools, univeristies and many other academic workplaces. <br> 
+    through using technology we were able to make taking attendance much easier, <br>
+    simply sign up or sign in take a picture of your face, then through our advanced technology engines, <br>
+    our program will make sure that your picture matches the first picture we have saved in our database, <br>
+    after that, BOOM you are saved in the system as an attendee for that day. <br>
+    sign up or sign in by pressing the buttons in the side navigation bar to experience our technology.<br>  </p>
+    <span class = "second-underline"> Scroll down to know more about us. </span> 
+  </div>
+
+
+<!--animated card-->
+<h2 class = "animated-h2"> Our Technology in Detail</h2>
+<p class = "animated-para"> these are the most asked questions we get about our technology</p>
+<div class = container1>
+    
+    <!--animated card numeber 1 -->
+    <div class = card1>
+      <div class = image>
+        <img href = "#" src = https://cdn.dribbble.com/users/32512/screenshots/4740210/media/c4f4bd61a5b1e7e9a0ca240d1f9422d7.gif>
+      </div>
+      <div class = content>
+        <h3>How does this technology works in details</h3>
+        <p>fill in text that defines the technology.</p>
+      </div>
+    </div>    
+
+    <!--animated card numeber 2 -->
+    <div class = card1>
+        <div class = image>
+          <img href = "#" src = https://cdn.dribbble.com/users/1679879/screenshots/3903645/media/344aca0636ffc172e623ecde20c84b40.gif>
+        </div>
+        <div class = content>
+          <h3>how & why did we develop this technology? </h3>
+          <p>fill in text that defines the technology and why it was made.</p>
+        </div>
+      </div>    
+
+    <!--animated card numeber 3 -->
+      <div class = card1>
+        <div class = image>
+          <img href = "#" src = https://cdn.dribbble.com/users/525106/screenshots/5426142/media/0b5df52ebd61e0def38f7b920ab163f9.gif>
+        </div>
+        <div class = content>
+          <h3>who is able to view my attendance status? </h3>
+          <p>explain the database and the adminstration and teachers accessabilities.</p>
+        </div>
+      </div>    
+  </div>
+
+
+
+  <!--advertisment cards-->
+    <h1 class = "adv-h1"> Academic environments that we support </h1>
+    <p class = "adv-para"> here are all the schools, universities and academic workplaces that use our technology on daily basis</p>
+  <div class = "container2">
+    
+    <div class="card2">
+        <h4> <span class = "L-num"> 790 </span> <br> Schools <br> around the world </h4>
+    </div>
+
+    <div class="card2">
+        <h4> <span class = "L-num"> 1290 </span> <br> Univeristies <br>around the world</h4>
+    </div>
+
+    <div class="card2">
+        <h4> <span class = "L-num"> 12 </span> <br> Educational Ministries <br> around the world</h4>
+    </div>
+</div>
+
+
+<!--contact us-->
+<div class="contact-form">
+  <h2>Contact Us</h2>
+  <p> Fill the form <br>
+    We Will get in contact within 24 to 48 hours</p>
+  <form>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+</body>
+</html> 
